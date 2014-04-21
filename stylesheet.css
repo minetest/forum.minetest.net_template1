@@ -2905,7 +2905,11 @@ hr.dashed {
 
 /*.bg1	{ background-color: #EDF1F5;}
 .bg2	{ background-color: #EDF1F5; } C55*/
-.bg3	{ background-color: #EDF1F5; }//#ebebeb
+.bg3	{ background-color: #EDF1F5; }/*#ebebeb*/
+
+/* C55 */
+li.sticky.bg1	{ background-color: #EDF1F5;}
+li.sticky.bg2	{ background-color: #EDF1F5;}
 
 .ucprowbg {
 	background-color: #DCDEE2;
