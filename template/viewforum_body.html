@@ -25,15 +25,6 @@
 	</div>
 <!-- ENDIF -->
 
-<!-- IF S_HAS_SUBFORUM -->
-<!-- IF not S_IS_BOT and U_MARK_FORUMS -->
-<ul class="linklist">
-	<li class="rightside"><a href="{U_MARK_FORUMS}">{L_MARK_SUBFORUMS_READ}</a></li>
-</ul>
-<!-- ENDIF -->
-	<!-- INCLUDE forumlist_body.html -->
-<!-- ENDIF -->
-
 <!-- IF S_DISPLAY_POST_INFO or PAGINATION or TOTAL_POSTS or TOTAL_TOPICS -->
 	<div class="topic-actions" <!-- IF S_HAS_SUBFORUM -->style="margin-top: 2em;"<!-- ENDIF -->>
 
@@ -168,7 +159,7 @@
 	<!-- ENDIF -->
 <!-- END topicrow -->
 
-<!-- IF S_SELECT_SORT_DAYS and not S_DISPLAY_ACTIVE -->
+<!-- IF S_SELECT_SORT_DAYS and not S_DISPLAY_ACTIVE and not S_HAS_SUBFORUM -->
 	<form method="post" action="{S_FORUM_ACTION}">
 		<fieldset class="display-options">
 			<!-- IF PREVIOUS_PAGE --><a href="{PREVIOUS_PAGE}" class="left-box {S_CONTENT_FLOW_BEGIN}">{L_PREVIOUS}</a><!-- ENDIF -->
@@ -183,7 +174,7 @@
 	<hr />
 <!-- ENDIF -->
 
-<!-- IF .topicrow and not S_DISPLAY_ACTIVE -->
+<!-- IF .topicrow and not S_DISPLAY_ACTIVE and not S_HAS_SUBFORUM -->
 	<div class="topic-actions">
 		<!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
 		<div class="buttons">
@@ -201,6 +192,15 @@
 		</div>
 		<!-- ENDIF -->
 	</div>
+<!-- ENDIF -->
+
+<!-- IF S_HAS_SUBFORUM -->
+<!-- IF not S_IS_BOT and U_MARK_FORUMS -->
+<ul class="linklist">
+	<li class="rightside"><a href="{U_MARK_FORUMS}">{L_MARK_SUBFORUMS_READ}</a></li>
+</ul>
+<!-- ENDIF -->
+	<!-- INCLUDE forumlist_body.html -->
 <!-- ENDIF -->
 
 <!-- INCLUDE jumpbox.html -->
