@@ -118,7 +118,8 @@ p.right {
 	//padding: 0 20px;
 	margin: 0 auto;
 	min-width: 650px;
-	width:90%;
+	max-width: 1150px;
+	width:95%;
 	box-shadow: 0 0 58px 2px #CCC;
 	background: #FFFFFF;
 	border-left: 1px solid #ccc;
