@@ -136,7 +136,13 @@
 		<!-- ENDIF -->
 
 		<!-- BEGIN custom_fields -->
-			<dd><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}:</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</dd>
+			<!-- IF postrow.custom_fields.PROFILE_FIELD_NAME == "github" -->
+				<dd><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}:</strong> 
+					<a href="http://github.com/{postrow.custom_fields.PROFILE_FIELD_VALUE}" class="postlink" style='font-size: 100%; border:0; background:none;'
+						 title="Visit {postrow.custom_fields.PROFILE_FIELD_VALUE}'s Github page"><span>{postrow.custom_fields.PROFILE_FIELD_VALUE}</span></a>
+			<!-- ELSE -->
+				<dd><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}:</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</dd>
+			<!-- ENDIF -->
 		<!-- END custom_fields -->
 
 		<!-- IF not S_IS_BOT -->
