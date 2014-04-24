@@ -3467,6 +3467,11 @@ fieldset.polls dd div {
 	color: #000000;
 }
 
+.postprofile img {
+	max-width: 96px;
+	max-height: 96px;
+}
+
 .online {
 	background-image: url("{IMG_ICON_USER_ONLINE_SRC}");
 	background-repeat: no-repeat;
