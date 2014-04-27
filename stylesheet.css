@@ -38,7 +38,7 @@ body {
 
 h1 {
 	/* Forum name */
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin-right: 200px;
 	color: #323232;
 	margin-top: 15px;
@@ -48,7 +48,7 @@ h1 {
 
 h2 {
 	/* Forum header titles */
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	color: #3f3f3f;
 	font-size: 2em;
@@ -74,7 +74,7 @@ h3 {
 
 h4 {
 	/* Forum and topic list titles */
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, Sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.3em;
 }
 
@@ -721,7 +721,7 @@ a:active	{ color: #d2d2d2; text-decoration: none; }
 
 /* Links for forum/topic lists */
 a.forumtitle {
-	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
 	color: #898989;
@@ -740,7 +740,7 @@ a.forumtitle:active {
 }
 
 a.topictitle {
-	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.2em; /*C55*/
 	/*font-weight: bold; C55*/
 	color: #898989;
@@ -1160,7 +1160,7 @@ margin: 10px;
 	margin: 0 0 0.3em 0 !important;
 	text-transform: none;
 	border: none;
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 125%;
 }
 
@@ -1230,7 +1230,7 @@ margin: 10px;
 	min-height: 3em;
 	overflow: hidden;
 	line-height: 1.4em;
-	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	color: #333333;
 	padding-bottom: 1px;
@@ -1257,7 +1257,7 @@ margin: 10px;
 }
 
 .content p {
-	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 	margin-bottom: 1em;
 	line-height: 1.4em;
@@ -2584,7 +2584,7 @@ fieldset.submit-buttons input {
 }
 
 #message-box textarea {
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 450px;
 	height: 270px;
 	min-width: 100%;
