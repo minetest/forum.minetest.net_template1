@@ -743,9 +743,11 @@ a.topictitle {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.2em; /*C55*/
 	/*font-weight: bold; C55*/
+	line-height: 1.3em;
 	color: #898989;
 	text-decoration: none;
 }
+
 li.unread a.topictitle {
 	font-weight: bold; /*C55*/
 }
