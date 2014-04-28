@@ -355,8 +355,6 @@ ul.linklist li.rightside, p.rightside {
 ul.navlinks {
 	padding-bottom: 1px;
 	margin-bottom: 1px;
-	margin-top: 22px;
-	//border-bottom: 1px solid #FFFFFF;
 	font-weight: bold;
 }
 
@@ -2874,7 +2872,8 @@ hr.dashed {
 }
 
 .navbar {
-	//background-color: #cadceb;
+	background: #EEE;
+	clear:both;
 }
 
 .forabg {
