@@ -1756,6 +1756,7 @@ a.print, a.sendemail, a.fontsize {
 	text-indent: -5000px;
 	text-align: left;
 	background-repeat: no-repeat;
+	margin: 0.5em 5px 0 -5px;
 }
 
 a.print {
