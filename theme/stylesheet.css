@@ -28,7 +28,7 @@ body {
 	//font-family: Verdana, Helvetica, Arial, sans-serif;
 	color: #828282;
 	background-color: #FFFFFF;
-	background-image: url(http://minetest.net//lib/tpl/minetest3/images/body_bg.png);
+	background-image: url("{T_THEME_PATH}/images/body_bg.png");
 	/*font-size: 62.5%;			 This sets the default font size to be equivalent to 10px */
 	font-size: 75%;
 	margin: 0;
