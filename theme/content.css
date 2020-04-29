@@ -709,6 +709,7 @@ fieldset.polls dd div {
 	width: 22%;*/
 	float: left;
 	display: inline;
+	max-width: 18%;
 }
 
 .pm .postprofile {
