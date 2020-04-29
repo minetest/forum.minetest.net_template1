@@ -87,7 +87,7 @@
 									<i class="icon fa-file fa-fw icon-red icon-md" aria-hidden="true"></i><span class="sr-only">{L_NEW_POST}</span>
 								</a>
 							<!-- ENDIF -->
-							<a href="{searchresults.U_VIEW_TOPIC}" class="topictitle">{searchresults.TOPIC_TITLE}</a>
+							<a href="{searchresults.U_VIEW_TOPIC}" class="topictitle">{searchresults.TOPIC_TITLE}</a><!-- IF searchresults.S_UNREAD_TOPIC --> <a href="{searchresults.U_NEWEST_POST}">(New posts)</a><!-- ENDIF -->
 							<!-- IF searchresults.S_TOPIC_UNAPPROVED or searchresults.S_POSTS_UNAPPROVED -->
 								<a href="{searchresults.U_MCP_QUEUE}" title="{L_TOPIC_UNAPPROVED}">
 									<i class="icon fa-question fa-fw icon-blue" aria-hidden="true"></i><span class="sr-only">{L_TOPIC_UNAPPROVED}</span>

@@ -137,7 +137,7 @@
 		<a id="unread" class="anchor"<!-- IF S_UNREAD_VIEW --> data-url="{postrow.U_MINI_POST}"<!-- ENDIF -->></a>
 	<!-- ENDIF -->
 	<div id="p{postrow.POST_ID}" class="post has-profile <!-- IF postrow.S_ROW_COUNT is odd -->bg1<!-- ELSE -->bg2<!-- ENDIF --><!-- IF postrow.S_UNREAD_POST --> unreadpost<!-- ENDIF --><!-- IF postrow.S_POST_REPORTED --> reported<!-- ENDIF --><!-- IF postrow.S_POST_DELETED --> deleted<!-- ENDIF --><!-- IF postrow.S_ONLINE and not postrow.S_POST_HIDDEN --> online<!-- ENDIF --><!-- IF postrow.POSTER_WARNINGS --> warned<!-- ENDIF -->">
-		<div class="inner">
+		<div class="inner" style="background: #FAFAFA;">
 
 		<dl class="postprofile" id="profile{postrow.POST_ID}"<!-- IF postrow.S_POST_HIDDEN --> style="display: none;"<!-- ENDIF -->>
 			<dt class="<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG -->has-profile-rank<!-- ELSE -->no-profile-rank<!-- ENDIF --> <!-- IF postrow.POSTER_AVATAR -->has-avatar<!-- ELSE -->no-avatar<!-- ENDIF -->">
@@ -169,7 +169,13 @@
 		<!-- EVENT viewtopic_body_postrow_custom_fields_before -->
 		<!-- BEGIN custom_fields -->
 			<!-- IF not postrow.custom_fields.S_PROFILE_CONTACT -->
+				<!-- IF postrow.custom_fields.PROFILE_FIELD_NAME == "GitHub" -->
+				<dd class="profile-custom-field profile-{postrow.custom_fields.PROFILE_FIELD_IDENT}"><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}{L_COLON}</strong> 
+				<a href="https://github.com/{postrow.custom_fields.PROFILE_FIELD_VALUE}" class="postlink" style='font-size:100%; border:0; background:none;'
+						 title="Visit {postrow.custom_fields.PROFILE_FIELD_VALUE}'s Github page"><span>{postrow.custom_fields.PROFILE_FIELD_VALUE}</span></a></dd>
+				<!-- ELSE -->
 				<dd class="profile-custom-field profile-{postrow.custom_fields.PROFILE_FIELD_IDENT}"><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}{L_COLON}</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</dd>
+				<!-- ENDIF -->
 			<!-- ENDIF -->
 		<!-- END custom_fields -->
 		<!-- EVENT viewtopic_body_postrow_custom_fields_after -->
@@ -207,7 +213,7 @@
 
 		</dl>
 
-		<div class="postbody">
+		<div class="postbody" style="min-height: 150px;">
 			<!-- IF postrow.S_POST_HIDDEN -->
 				<!-- IF postrow.S_POST_DELETED -->
 					<div class="ignore" id="post_hidden{postrow.POST_ID}">
@@ -282,6 +288,7 @@
 
 			<!-- EVENT viewtopic_body_postrow_post_details_before -->
 			<p class="author">
+				<span class="responsive-hide">{L_POST_BY_AUTHOR} <strong>{postrow.POST_AUTHOR_FULL}</strong> &raquo; </span><time datetime="{postrow.POST_DATE_RFC3339}">{postrow.POST_DATE}</time>
 				<!-- IF S_IS_BOT -->
 					<span><i class="icon fa-file fa-fw <!-- IF postrow.S_UNREAD_POST -->icon-red<!-- ELSE -->icon-lightgray<!-- ENDIF --> icon-md" aria-hidden="true"></i><span class="sr-only">{postrow.MINI_POST}</span></span>
 				<!-- ELSE -->
@@ -289,7 +296,6 @@
 						<i class="icon fa-file fa-fw <!-- IF postrow.S_UNREAD_POST -->icon-red<!-- ELSE -->icon-lightgray<!-- ENDIF --> icon-md" aria-hidden="true"></i><span class="sr-only">{postrow.MINI_POST}</span>
 					</a>
 				<!-- ENDIF -->
-				<span class="responsive-hide">{L_POST_BY_AUTHOR} <strong>{postrow.POST_AUTHOR_FULL}</strong> &raquo; </span><time datetime="{postrow.POST_DATE_RFC3339}">{postrow.POST_DATE}</time>
 			</p>
 			<!-- EVENT viewtopic_body_postrow_post_details_after -->
 
@@ -363,14 +369,6 @@
 		</div>
 
 		<!-- EVENT viewtopic_body_postrow_back2top_before -->
-		<div class="back2top">
-			<!-- EVENT viewtopic_body_postrow_back2top_prepend -->
-			<a href="#top" class="top" title="{L_BACK_TO_TOP}">
-				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
-				<span class="sr-only">{L_BACK_TO_TOP}</span>
-			</a>
-			<!-- EVENT viewtopic_body_postrow_back2top_append -->
-		</div>
 		<!-- EVENT viewtopic_body_postrow_back2top_after -->
 
 		</div>
