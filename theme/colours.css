@@ -126,17 +126,17 @@ a:hover { color: #D31141; }
 	color: #000000;
 }
 
-.bg1 {
+/*.bg1 {
 	background-color: #ECF3F7;
-}
+}*/
 
 table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
 	background-color: #ECF3F7;
 }
 
-.bg2 {
+/*.bg2 {
 	background-color: #E1EBF2;
-}
+}*/
 
 table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
 	background-color: #E1EBF2;
