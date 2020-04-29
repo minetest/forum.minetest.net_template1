@@ -7,18 +7,18 @@ html {
 }
 
 body {
-	font-family: Verdana, Helvetica, Arial, sans-serif;
-	font-size: 10px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 75%;
 	line-height: normal;
 	margin: 0;
-	padding: 12px 0;
+	/*padding: 12px 0;*/
 	word-wrap: break-word;
 	-webkit-print-color-adjust: exact;
 }
 
 h1 {
 	/* Forum name */
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin-right: 200px;
 	margin-top: 15px;
 	font-weight: bold;
@@ -27,7 +27,7 @@ h1 {
 
 h2 {
 	/* Forum header titles */
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	font-size: 2em;
 	margin: 0.8em 0 0.2em 0;
@@ -63,6 +63,7 @@ p {
 
 img {
 	border-width: 0;
+	max-width: 100%;
 }
 
 hr {
@@ -143,7 +144,11 @@ a:hover	{ text-decoration: underline; }
 	margin: 0 auto;
 	max-width: 1152px;
 	min-width: 625px;
-	padding: 15px;
+	/*padding: 15px;*/
+	width: 95%;
+	box-shadow: 0 0 58px 2px #CCC;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 }
 
 @media only screen and (max-width: 1220px), only screen and (max-device-width: 1220px) {
@@ -154,6 +159,7 @@ a:hover	{ text-decoration: underline; }
 
 .page-body {
 	margin: 4px 0;
+	padding: 0 10px;
 	clear: both;
 }
 
@@ -177,8 +183,8 @@ a:hover	{ text-decoration: underline; }
 
 .site_logo {
 	display: inline-block;
-	width: 149px;
-	height: 52px;
+	width: 60px;
+	height: 60px;
 }
 
 /* Site description and logo */
@@ -194,9 +200,13 @@ a:hover	{ text-decoration: underline; }
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .headerbar {
-	margin-bottom: 4px;
+	background: linear-gradient(#D4D4D4 0%, #FFFFFF 25%);
+	background: -moz-linear-gradient(#D4D4D4 0%, #FFFFFF 25%);
+	background: -webkit-linear-gradient(#D4D4D4 0%, #FFFFFF 25%);
+	/*margin-bottom: 4px;*/
 	padding: 5px;
 	border-radius: 7px;
+	min-height: 60px;
 }
 
 .navbar {
@@ -206,30 +216,35 @@ a:hover	{ text-decoration: underline; }
 
 .forabg {
 	margin-bottom: 4px;
-	padding: 5px;
+	/*padding: 5px;*/
 	clear: both;
 	border-radius: 7px;
 }
 
+.forabg .inner {
+	margin: 10px -10px;
+}
+
 .forumbg {
-	margin-bottom: 4px;
-	padding: 5px;
+	margin: 0 -10px 0 -10px;
+	/*padding: 5px;*/
 	clear: both;
 	border-radius: 7px;
 }
 
 .panel {
-	margin-bottom: 4px;
+	margin: 1em 3em 1em 3em;
+	border: 1px dotted #8cacbb;
 	padding: 5px 10px;
-	border-radius: 7px;
 }
 
 .post {
-	padding: 5px 10px;
+	/*padding: 5px 10px;
 	margin-bottom: 4px;
 	background-repeat: no-repeat;
 	background-position: 100% 0;
-	border-radius: 7px;
+	border-radius: 7px;*/
+	border: 1px solid;
 	position: relative;
 }
 

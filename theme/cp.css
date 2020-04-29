@@ -129,7 +129,7 @@ ul.cplist {
 /* CP tabbed menu
 ----------------------------------------*/
 .tabs {
-	margin: 20px 0 0 7px;
+	margin: 20px 0 -1.1em 3em;
 }
 
 .tabs .tab > a {

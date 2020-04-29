@@ -25,6 +25,7 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #333333;
 	background-color: #ffffff;
+	background-image: url("./images/body_bg.png");
 }
 
 input,

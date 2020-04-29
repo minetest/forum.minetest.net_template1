@@ -5,6 +5,7 @@ ul.topiclist {
 	display: block;
 	list-style-type: none;
 	margin: 0;
+	border-bottom: 1px solid #009DFF;
 }
 
 ul.topiclist li {
@@ -27,9 +28,9 @@ ul.topiclist dt, ul.topiclist dd {
 }
 
 ul.topiclist dt {
-	width: 100%;
+	width: 95%; /* different from old */
 	margin-right: -440px;
-	font-size: 1.1em;
+	/*font-size: 1.1em;*/
 }
 
 ul.topiclist.missing-column dt {
@@ -105,7 +106,7 @@ li.header dt, li.header dd {
 	padding-bottom: 2px;
 	font-size: 1em;
 	font-family: Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 li.header dt {
@@ -131,8 +132,9 @@ li.header dl.row-item dt, li.header dl.row-item dd {
 
 li.header dl.row-item dt .list-inner {
 	/* Tweak for headers alignment when folder icon used */
-	padding-left: 0;
-	padding-right: 50px;
+	padding-left: 10px;
+	font-size: 1.3em;
+	padding-right: 30px;
 }
 
 /* Forum list column styles */
@@ -231,9 +233,10 @@ dd.option {
 .postbody {
 	padding: 0;
 	line-height: 1.48em;
-	width: 76%;
+	/*width: 76%;*/
 	float: left;
 	position: relative;
+	margin: 10px;
 }
 
 .postbody .ignore {
@@ -242,19 +245,19 @@ dd.option {
 
 .postbody h3.first {
 	/* The first post on the page uses this */
-	font-size: 1.7em;
+	/*font-size: 1.7em;*/
 }
 
 .postbody h3 {
 	/* Postbody requires a different h3 format - so change it here */
 	float: left;
-	font-size: 1.5em;
+	font-size: 1.15em;
 	padding: 2px 0 0 0;
 	margin-top: 0 !important;
 	margin-bottom: 0.3em !important;
 	text-transform: none;
 	border: none;
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 125%;
 }
 
@@ -269,8 +272,9 @@ dd.option {
 }
 
 .postbody .content {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	overflow-x: auto;
+	line-height: 1.2em;
 }
 
 .postbody img.postimage {
@@ -330,7 +334,7 @@ dd.option {
 	min-height: 3em;
 	overflow: hidden;
 	line-height: 1.4em;
-	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	padding-bottom: 1px;
 }
@@ -355,7 +359,7 @@ dd.option {
 }
 
 .content p {
-	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 	margin-bottom: 1em;
 	line-height: 1.4em;
@@ -698,18 +702,22 @@ fieldset.polls dd div {
 /* Poster profile block
 ----------------------------------------*/
 .postprofile {
-	margin: 5px 0 10px 0;
-	min-height: 80px;
+	margin: 15px 10px 19px 10px;
+	/*min-height: 80px;
 	border: 1px solid transparent;
 	border-width: 0 0 0 1px;
-	width: 22%;
+	width: 22%;*/
 	float: right;
 	display: inline;
 }
 
+.pm .postprofile {
+	border-right: 1px solid transparent;
+}
+
 .postprofile dd, .postprofile dt {
 	line-height: 1.2em;
-	margin-left: 8px;
+	margin-right: 8px;
 }
 
 .postprofile dd {
@@ -739,8 +747,8 @@ fieldset.polls dd div {
 
 .postprofile .avatar img {
 	display: block;
-	height: auto !important;
-	max-width: 100%;
+	max-width: 64px;
+	max-height: 64px;
 }
 
 .postprofile .profile-posts a {

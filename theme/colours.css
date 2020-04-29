@@ -9,7 +9,7 @@ html, body {
 }
 
 h1 {
-	color: #FFFFFF;
+	color: #323232;
 }
 
 h2 {
@@ -36,11 +36,11 @@ a:hover { color: #D31141; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
-	color: #FFFFFF;
+	color: #323232;
 }
 
 .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: #A8D8FF;
+	color: #323232;
 }
 
 /* Notification mark read link */
@@ -86,30 +86,36 @@ a:hover { color: #D31141; }
 }
 
 .headerbar {
-	color: #FFFFFF;
+	/*color: #FFFFFF;*/
 }
 
 .headerbar, .forumbg {
-	background-color: #12A3EB;
+	/*background-color: #12A3EB;
 	background-image: -webkit-linear-gradient(top, #6ACEFF 0%, #0076B1 2px, #12A3EB 92px, #12A3EB 100%);
 	background-image: linear-gradient(to bottom, #6ACEFF 0%,#0076B1 2px,#12A3EB 92px,#12A3EB 100%);
-	background-repeat: repeat-x;
+	background-repeat: repeat-x;*/
 }
 
 .forabg {
-	background-color: #0076B1;
+	/*background-color: #0076B1;
 	background-image: -webkit-linear-gradient(top, #6ACEFF 0%, #12A3EB 2px, #0076B1 92px, #0076B1 100%);
 	background-image: linear-gradient(to bottom, #6ACEFF 0%,#12A3EB 2px,#0076B1 92px,#0076B1 100%);
-	background-repeat: repeat-x;
+	background-repeat: repeat-x;*/
 }
 
 .navbar {
-	background-color: #CADCEB;
+	background-color: #fff;
 }
 
 .panel {
-	background-color: #ECF1F3;
+	background-color: #dee7ec;
 	color: #28313F;
+}
+
+.post {
+	border-color: #dde4eb;
+	border-top-color: #fff;
+	border-bottom-color: #ccc;
 }
 
 .post:target .content {
@@ -149,14 +155,7 @@ table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
 }
 
 .site_logo {
-	background-image: url("./images/site_logo.gif");
-}
-
-/* Horizontal lists
-----------------------------------------*/
-
-ul.navlinks {
-	border-top-color: #FFFFFF;
+	background-image: url("./images/minetest-icon-60.png");
 }
 
 /* Table styles
@@ -301,6 +300,7 @@ li.reported:hover {
 }
 .sticky, .announce {
 	/* you can add a background for stickies and announcements*/
+	background-color: #EDF1F5;
 }
 
 div.rules {
@@ -319,10 +319,7 @@ Colours and backgrounds for content.css
 -------------------------------------------------------------- */
 
 ul.forums {
-	background-color: #EEF5F9; /* Old browsers */ /* FF3.6+ */
-	background-image: -webkit-linear-gradient(top, #D2E0EB 0%, #EEF5F9 100%);
-	background-image: linear-gradient(to bottom, #D2E0EB 0%,#EEF5F9 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D2E0EB', endColorstr='#EEF5F9',GradientType=0 ); /* IE6-9 */
+	background-color: #fbfbfb;
 }
 
 ul.topiclist li {
@@ -348,20 +345,16 @@ li.row strong {
 }
 
 li.row:hover {
-	background-color: #F6F4D0;
+	/*background-color: #F6F4D0;*/
 }
 
 li.row:hover dd {
-	border-left-color: #CCCCCC;
+	/*border-left-color: #CCCCCC;*/
 }
 
 .rtl li.row:hover dd {
-	border-right-color: #CCCCCC;
+	/*border-right-color: #CCCCCC;*/
 	border-left-color: transparent;
-}
-
-li.header dt, li.header dd {
-	color: #FFFFFF;
 }
 
 /* Post body styles
@@ -433,7 +426,7 @@ blockquote blockquote blockquote {
 }
 
 .codebox code {
-	color: #2E8B57;
+	color: #000000;
 }
 
 /* Attachments
