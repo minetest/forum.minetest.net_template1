@@ -414,6 +414,7 @@ p.author {
 	line-height: 140%;
 	overflow: hidden;
 	width: 100%;
+	max-height: 1.3em;
 }
 
 .signature.standalone {
