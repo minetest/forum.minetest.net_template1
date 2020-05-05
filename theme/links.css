@@ -79,7 +79,9 @@ a.topictitle {
 
 dl.topic_unread a.topictitle, dl.topic_unread_mine a.topictitle,
 dl.topic_unread_hot a.topictitle, dl.topic_unread_hot_mine a.topictitle,
-dl.topic_unread_locked a.topictitle, dl.topic_unread_locked_mine a.topictitle {
+dl.topic_unread_locked a.topictitle, dl.topic_unread_locked_mine a.topictitle,
+dl.sticky_unread_locked a.topictitle, dl.sticky_unread_locked_mine a.topictitle,
+dl.sticky_unread a.topictitle, dl.sticky_unread_mine a.topictitle {
 	font-weight: bold;
 }
 
